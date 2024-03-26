@@ -33,7 +33,6 @@ def power(U2,U1,V1,V2,mass_flow):
     return mass_flow*(U2[0]*V2[0] - U1[0]*V1[0])
 
 def powerWithSlipFactor(Sf,U):
-    #from saravanamutto book -> only for gas turbines
     return Sf*(U**2)
 
 def Wvetorial (W, beta):

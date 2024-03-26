@@ -53,3 +53,14 @@ print("W2:", W2)
 print("U1:", U1)
 print("U2:", U2)
 
+#evaluate slip factor if there are 12 blades:
+
+print("Slip factor:")
+sf = slipFactor(12,U2,V2vector,W2,r1,r2,beta2,method="Balje")
+print("Balje:",sf)
+sf = slipFactor(12,U2,V2vector,W2,r1,r2,beta2,method="Saravanamuttoo")
+print("Saravanamuttoo:",sf)
+sf = slipFactor(12,U2,V2vector,W2,r1,r2,beta2,method="Stodola")
+print("Stodola:",sf)
+sf = slipFactor(12,U2,V2vector,W2,r1,r2,beta2,method="Stanitz")
+print("Stanitz:",sf)

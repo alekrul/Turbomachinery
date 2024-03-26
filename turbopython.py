@@ -8,9 +8,25 @@ from math import *
 def TipSpeed(omega,r):
     return [omega*r,0]
 
-def slipFactor(n):
-    #from saravanamutto book -> only for gas turbines
-    return (1 - (0.63*pi/n))
+def slipFactor(n,U = [1,1],V = [0,0],W=[0,0],r1 = 1,r2 = 0, beta = pi/6,method="Balje"):
+    Sf = 1
+    if method == "Saravanamuttoo":
+        #from saravanamutto book
+        Sf = 1 - (0.63*pi/n)
+    elif method == "Stodola":
+        #Stodola method
+        Sf = 1 - ((pi*cos(beta))/n*(1-(V[1]/U[0])*tan(beta)))
+    elif method == "Stanitz":
+        #Stanitz method
+        A = (W[1]/U[0])*(1/tan(beta))
+        B = 0.63*pi/n
+        Sf = 1 - B*(1-(1/A))
+    elif method == "Balje":
+        Sf = 1/(1+(6.2/(n*((r2/r1)**(2/3)))))
+    else:
+        print("Couldn't find method")
+    return Sf
+    
 
 def power(U2,U1,V1,V2,mass_flow):
     #considering steady flow, no friction, 1D flow in the inlet and outlet, pressure effects negligible

@@ -1,12 +1,14 @@
 from turbopython import *
 from math import *
 
+#Given a centrifugal pump dimensions below 
+
 beta1 = radians(40)
 beta2 = radians(60)
-r1 = 380/1000
-r2 = 1140/1000
-b1 = 120/1000
-b2 = 80/1000
+r1 = 380/1000 #m
+r2 = 1140/1000 #m
+b1 = 120/1000 #m
+b2 = 80/1000 #m
 omega = 575 * 2*3.1415*(1/60) #rpm to rad/s
 Q = 18000/3600 #m3/h to m3/s
 

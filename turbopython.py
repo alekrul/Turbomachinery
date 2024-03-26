@@ -32,9 +32,9 @@ def power(U2,U1,V1,V2,mass_flow):
     #considering steady flow, no friction, 1D flow in the inlet and outlet, pressure effects negligible
     return mass_flow*(U2[0]*V2[0] - U1[0]*V1[0])
 
-def powerWithSlipFactor(n,U,mass_flow):
+def powerWithSlipFactor(Sf,U):
     #from saravanamutto book -> only for gas turbines
-    return slipFactor(n)*(U**2)
+    return Sf*(U**2)
 
 def Wvetorial (W, beta):
     return [-W*cos(beta),W*sin(beta)]

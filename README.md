@@ -2,6 +2,7 @@
  Turbomachinery analisys using python. The goal of this project is to implement Fluid Mechanics equations to analyse Turbomachines. Some book exercises will be solved.
 
 turbopython.py contains the basic equations/functions to solve the problems
+
 10_x_fox.py is the code used to solve the problem 10.x
 
 References used:

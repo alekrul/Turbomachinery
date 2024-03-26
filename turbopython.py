@@ -37,3 +37,6 @@ def torque(r2,r1,V1,V2,mass_flow):
 
 def Volumeflow(Vn,r,b):
     return Vn*(2*pi*r*b)
+
+def flowAngle(V):
+    return degrees(atan(V[0]/V[1]))

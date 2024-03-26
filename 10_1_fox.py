@@ -53,5 +53,3 @@ print("W2:", W2)
 print("U1:", U1)
 print("U2:", U2)
 
-
-

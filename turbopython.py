@@ -34,3 +34,6 @@ def flowtoVel(Q, r, b):
 def torque(r2,r1,V1,V2,mass_flow):
     #considering steady flow, no friction, 1D flow in the inlet and outlet, pressure effects negligible
     return mass_flow*(r2*V2[0] - r1*V1[0])
+
+def Volumeflow(Vn,r,b):
+    return Vn*(2*pi*r*b)

@@ -24,12 +24,6 @@ for i in range(len(Q)):
         W_dot[j][i] = power(U2,[0,0],[0,0],V2,Q[i]*999)
 
 print("W_dot",W_dot)
-#plt.plot(Q,W_dot)
-#plt.xlabel("Q")
-#plt.ylabel(r'$\dot{W}$')
-#plt.title("Variação de "+r'$\dot{W}$'+" a partir da mudança de Q")
-#plt.show()
-
 
 for i in range(len(beta2)):
     plt.plot(Q, W_dot[i,:], label='β = {}'.format(degrees(beta2[i])))

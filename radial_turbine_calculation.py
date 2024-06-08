@@ -1,6 +1,6 @@
-# Exemplo de cálculo de turbina radial dada em sala de aula
-#Disciplina ME211 - Turbomáquinas prof. Dr. Takachi
-#Autor: Alexandre Mendonça Krul (krul@ita.br)
+# Radial turbine calculation
+#ME211 - Turbomáquinas prof. Dr. Takachi
+#Autor: Alexandre KRUL (krul@ita.br) and Elias AHTITICH (Elias.AHTITICH@student.isae-supaero.fr)
 
 from math import *
 import numpy as np
@@ -164,5 +164,3 @@ work_coeff = cp*(T_t0-T_t3)/(U2**2)
 
 
 print(f"h) Work coefficient (ψ): {work_coeff:.3f}")
-
-

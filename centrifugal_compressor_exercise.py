@@ -207,7 +207,7 @@ W1 = sqrt(Va1**2 + U_eye_tip**2)
 a1 = sqrt(gama*R*T_1)
 
 M_eye_tip = W1/a1 #mach number at tip of the eye
-print("Relative Mach Number at eye tip:", M_eye_tip)
+print(f"Relative Mach Number at eye tip: {M_eye_tip:.3f}")
 
 print("Too high, we will assume a Inlet guide vane to make a pre-swirl of 30 degrees")
 swirl_angle = radians(30)

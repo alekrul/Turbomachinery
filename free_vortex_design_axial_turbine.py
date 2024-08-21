@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 
 #rr = rm - (h/2) and rt = rm + (h/2)
 
+#inicio:
+
 rr2 = turbine.rm - turbine.h2/2
 rt2 = turbine.rm + turbine.h2/2
 
